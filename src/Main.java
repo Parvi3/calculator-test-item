@@ -27,11 +27,11 @@ public class Main {
         String[] arrayNumbers = input.split("[+\\-*/]");
 
         for (int i = 0; i < romanNumerals.length; i++) {
-            if(arrayNumbers[0].trim().equals(romanNumerals[i])) {
+            if(arrayNumbers[0].trim().toUpperCase().equals(romanNumerals[i])) {
                 numberOne = i + 1;
             }
 
-            if(arrayNumbers[1].trim().equals(romanNumerals[i])) {
+            if(arrayNumbers[1].trim().toUpperCase().equals(romanNumerals[i])) {
                 numberTwo = i + 1;
             }
         }
